@@ -101,6 +101,7 @@ package body Automatic_Train_Operation is
       Distance_To_Obs   : Distance_M;
       Current_GoA       : GoA_Level) return Train_Action
    is
+      pragma Warnings (Off, Current_GoA);
    begin
       -- Precondition guarantees GoA_4 here, so we evaluate unattended rules exclusively
       if not Obstacle_Detected then
