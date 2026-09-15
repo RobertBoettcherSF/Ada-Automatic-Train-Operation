@@ -1,5 +1,5 @@
 pragma Ada_2022;
-pragma Assertion_Policy (Pre => Check, Post => Check, Global => Check);
+pragma Assertion_Policy (Pre => Check, Post => Check);
 
 package Automatic_Train_Operation is
 
